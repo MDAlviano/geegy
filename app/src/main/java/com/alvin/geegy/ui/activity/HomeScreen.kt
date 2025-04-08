@@ -21,5 +21,12 @@ class HomeScreen : AppCompatActivity() {
             }
         }
 
+        findViewById<CardView>(R.id.secondAppointment).setOnClickListener {
+            Intent(this, AppointmentDetailScreen::class.java).also {
+                it.putExtra("APPOINTMENT", 2)
+                startActivity(it)
+            }
+        }
+
     }
 }

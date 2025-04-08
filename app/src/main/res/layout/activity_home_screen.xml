@@ -124,10 +124,91 @@
                     android:layout_marginTop="16dp"
                     android:text="Problems:"/>
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cavity"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/secondAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:background="@color/white"
+            android:layout_margin="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Jillane"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="10-04-2024 08:45"/>
+
+                </RelativeLayout>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cavity"/>
+                    android:text="DOB: 25-06-2003 (20 years old)"
+                    android:textStyle="italic"
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Problems:"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cavity"/>
+
+                    <TextView
+                        android:id="@+id/tvCancelled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:elevation="8dp"
+                        android:paddingVertical="4dp"
+                        android:paddingHorizontal="8dp"
+                        android:background="@color/light_red"
+                        android:text="Cancelled"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:textSize="12sp"/>
+
+                </RelativeLayout>
 
             </LinearLayout>
 
@@ -155,7 +236,7 @@
             android:text="success"/>
 
         <TextView
-            android:id="@+id/tvCancelledAppointment"
+            android:id="@+id/tvCancelledAppointments"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="cancelled"/>
